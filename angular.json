@@ -50,7 +50,7 @@
                   "/details/3",
                   "/details/4",
                   "/details/5"
-          },
+                ],
           "configurations": {
             "production": {
               "budgets": [
