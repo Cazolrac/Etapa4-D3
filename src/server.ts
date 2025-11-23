@@ -6,6 +6,18 @@ import {
 } from '@angular/ssr/node';
 import express from 'express';
 import { join } from 'node:path';
+import { provideRouter, withPrerendering } from '@angular/router';
+
+// En tu configuración de rutas
+provideRouter(routes, withPrerendering({
+  getPrerenderParams: () => [
+    { id: '1' }, 
+    { id: '2' }, 
+    { id: '3' },
+    { id: '4' },
+    { id: '5' },
+  ]
+}))
 
 const browserDistFolder = join(import.meta.dirname, '../browser');
 
