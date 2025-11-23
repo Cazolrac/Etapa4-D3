@@ -21,14 +21,6 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "routes": [
-                "/",
-                "/details/1",
-                "/details/2", 
-                "/details/3",
-                "/details/4",
-                "/details/5"
-            ],
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
@@ -49,7 +41,17 @@
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
-              "entry": "src/server.ts"
+              "entry": "src/server.ts",
+              "prerender": {
+                "routes": [
+                  "/",
+                  "/details/1",
+                  "/details/2", 
+                  "/details/3",
+                  "/details/4",
+                  "/details/5"
+                ]
+              }
             }
           },
           "configurations": {
