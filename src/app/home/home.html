@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Página Principal</h1>
+<p>Bienvenido a la Home Page</p>
+<ul>
+  <li *ngFor="let id of [1, 2, 3, 4, 5 ]">
+    <a [routerLink]="['/details', id]">Ir a detallers del Id: #{{id}}</a>
+  </li>
+</ul>
+</div>
