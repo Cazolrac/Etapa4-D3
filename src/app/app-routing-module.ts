@@ -12,13 +12,7 @@ const routes: Routes = [
   {path: '', component: Home},
   {path: 'home', component: Home},
   
-  { 
-    path: 'details/:id', 
-    component: DetailsComponent,
-    // Cambiar a renderizado en el cliente
-    providers: [provideClientHydration(withNoHttpTransferCache())]
-  }
-
+  {path: 'detalles', component: detalle},
   {
     path: 'admin', component: Admin,
     children: [
