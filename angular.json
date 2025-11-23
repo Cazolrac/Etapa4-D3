@@ -21,14 +21,6 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "browserTarget": "Etapa4-D3:build:production",
-          "serverTarget": "Etapa4-D3:server:production",
-          "routes": [
-          "/",
-          "/app",
-          "/home",
-          "/admin",
-          ],
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
