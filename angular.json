@@ -40,17 +40,18 @@
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
-            "ssr": true,
-              "entry": "src/server.ts",
-              "prerender": true,
-                "routes": [
-                  "/",
-                  "/details/1",
-                  "/details/2", 
-                  "/details/3",
-                  "/details/4",
-                  "/details/5"
-                ],
+            "ssr" {
+              "entry": "src/server.ts"
+            },
+            "prerender": true,
+            "routes": [
+              "/",
+              "/details/1",
+              "/details/2",
+              "/details/3",
+              "/details/4", 
+              "/details/5"
+            ]
           "configurations": {
             "production": {
               "budgets": [
