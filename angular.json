@@ -23,6 +23,7 @@
         "build": {
           "routes": [
           "/",
+          "/home",
           "/details/1",
           "/details/2"
           ],
