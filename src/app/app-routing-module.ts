@@ -6,6 +6,8 @@ import { Admin } from './admin/admin';
 import { UserList } from './admin/user-list/user-list';
 import { ProductList } from './admin/product-list/product-list';
 
+export const prerender = false;
+
 const routes: Routes = [
   {path: '', component: Home},
   {path: 'home', component: Home},
