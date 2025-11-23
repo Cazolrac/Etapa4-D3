@@ -21,15 +21,10 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "browserTarget": "ETAPA4-D3:build:production",
-          "serverTarget": "ETAPA4-D3:server:production",
           "routes": [
-          "/home",
+          "/",
           "/details/1",
-          "/details/2",
-          "/details/3",
-          "/details/4",
-          "/details/5",
+          "/details/2"
           ],
           "builder": "@angular/build:application",
           "options": {
