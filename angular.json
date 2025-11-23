@@ -21,6 +21,8 @@
       "prefix": "app",
       "architect": {
         "build": {
+          "browserTarget": "Etapa4-D3:build:production",
+          "serverTarget": "Etapa4-D3:server:production",
           "routes": [
           "/",
           "/home",
