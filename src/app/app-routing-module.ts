@@ -11,7 +11,13 @@ export const prerender = false;
 const routes: Routes = [
   {path: '', component: Home},
   {path: 'home', component: Home},
-  {path: 'details/:id', component: Details},
+  
+  { 
+    path: 'details/:id', 
+    component: DetailsComponent,
+    // Cambiar a renderizado en el cliente
+    providers: [provideClientHydration(withNoHttpTransferCache())]
+  }
 
   {
     path: 'admin', component: Admin,
