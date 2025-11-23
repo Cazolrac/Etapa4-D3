@@ -46,7 +46,15 @@
           },
           "configurations": {
             "production": {
-              
+              "prerender": true,
+              "routes": [
+                "/",
+                "/details/1",
+                "/details/2", 
+                "/details/3",
+                "/details/4",
+                "/details/5"
+              ]
               "budgets": [
                 {
                   "type": "initial",
