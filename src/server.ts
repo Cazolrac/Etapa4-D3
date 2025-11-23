@@ -7,6 +7,25 @@ import {
 import express from 'express';
 import { join } from 'node:path';
 
+export const appConfig: ApplicationConfig = {
+  providers: [
+    provideServerRendering(),
+    provideRouter(routes, withPrerendering({
+      getPrerenderParams: () => {
+        return [
+          // Lista de IDs que quieres prerenderizar
+          { id: '1' },
+          { id: '2' },
+          { id: '3' },
+          { id: '4' },
+          { id: '5' },
+          // Agrega todos los IDs que necesites
+        ];
+      }
+    }))
+  ]
+};
+
 const browserDistFolder = join(import.meta.dirname, '../browser');
 
 const app = express();
