@@ -46,7 +46,7 @@
           },
           "configurations": {
             "production": {
-              "prerender": false
+              
               "budgets": [
                 {
                   "type": "initial",
